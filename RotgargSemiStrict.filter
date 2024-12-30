@@ -6,7 +6,7 @@
 # EARLY ACCESS
 # ---------------------------------------------------------------------------------------------------------------
 #
-# MY EDITED VERSION: 0.6.12.26.2004
+# MY EDITED VERSION: 9.1 - 12.30.2024
 # EDITOR: Rotgarg (https://steamcommunity.com/id/Chuckula/)
 #
 #
@@ -78,7 +78,7 @@ SetBackgroundColor 0 0 0 180
 # Uncut Gems - You will probably want to hide Support at some point, just change it to Hide.
 #--------------------------
 
-Show
+Hide
 BaseType "Uncut Support"
 SetFontSize 20
 SetTextColor 20 240 240
@@ -88,7 +88,7 @@ MinimapIcon 1 Cyan Circle
 
 Show
 BaseType "Uncut Spirit"
-SetFontSize 28
+SetFontSize 25
 SetTextColor 20 240 240
 SetBorderColor 20 240 240
 PlayEffect Cyan
@@ -99,8 +99,8 @@ BaseType "Uncut Skill"
 SetFontSize 25
 SetTextColor 20 240 240
 SetBorderColor 20 240 240
-PlayEffect Cyan
-MinimapIcon 1 Cyan Circle
+PlayEffect Blue
+MinimapIcon 1 Blue Circle
 
 #--------------------------
 # Socketables and Special Character Equipment
@@ -170,8 +170,8 @@ PlayEffect Cyan Temp
 # Currency Tier A:
 Show
 Class "Currency"
-BaseType "Orb of Annulment" "Orb of Chance" "Orb of Alchemy" "Greater Jeweller's Orb" "Exalted Orb"
-SetFontSize 40
+BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Exalted Orb" "Chaos Orb"
+SetFontSize 38
 SetTextColor 255 0 0 255
 SetBorderColor 255 0 0 255
 SetBackgroundColor 255 255 255 255
@@ -182,8 +182,8 @@ MinimapIcon 0 Red Star
 # Currency Tier B:
 Show
 Class "Currency"
-BaseType "Vaal Orb" "Lesser Jeweller's Orb" "Exotic" "Glassblower's Bauble" "Regal Orb" "Gemcutter's Prism" "Artificer's Orb" "Chaos Orb" "Chance Shard"
-SetFontSize 35
+BaseType "Vaal Orb" "Lesser Jeweller's Orb" "Exotic" "Regal Orb" "Artificer's Orb" "Chance Shard" "Orb of Alchemy" "Glassblower's Bauble" "Gemcutter's Prism" 
+SetFontSize 34
 SetTextColor 0 0 255 255
 SetBorderColor 255 0 0 255
 SetBackgroundColor 255 255 255 255
@@ -195,11 +195,11 @@ MinimapIcon 0 Red Circle
 Show
 Class "Currency"
 BaseType "Distilled" "Catalyst" "Essence of" "Omen of"
-SetFontSize 35
+SetFontSize 34
 SetTextColor 0 0 0 255
 SetBorderColor 255 0 0 255
 SetBackgroundColor 240 90 35 255
-PlayAlertSound 4 300
+PlayAlertSound 5 300
 PlayEffect Yellow
 MinimapIcon 1 Yellow Circle
 
@@ -207,7 +207,7 @@ MinimapIcon 1 Yellow Circle
 Show
 Class "Currency"
 BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Shard"
-SetFontSize 30
+SetFontSize 28
 SetTextColor 0 0 0 255
 SetBorderColor 0 0 0 255
 SetBackgroundColor 249 150 25 255
@@ -219,7 +219,7 @@ MinimapIcon 2 White Circle
 Show
 Class "Currency"
 BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
-SetFontSize 30
+SetFontSize 35
 SetTextColor 0 0 0 255
 SetBorderColor 255 0 0 255
 SetBackgroundColor 213 159 0 255
@@ -248,7 +248,7 @@ BaseType "Simulacrum" " Tablet" "Breachstone" "Barya" "Ultimatum" " Fragment" "C
 SetTextColor 255 207 255
 SetBorderColor 255 207 255
 SetBackgroundColor 65 20 80
-PlayAlertSound 2 300
+PlayAlertSound 5 300
 PlayEffect White
 MinimapIcon 1 White Square
 SetFontSize 40
@@ -261,7 +261,7 @@ SetBorderColor 255 255 255
 PlayAlertSound 4 300
 PlayEffect White
 MinimapIcon 1 White Square
-SetFontSize 36
+SetFontSize 40
 
 
 #--------------------------
@@ -273,10 +273,10 @@ Show
 Sockets > 0
 Rarity Normal
 SetBorderColor 200 200 200
-SetFontSize 35
+SetFontSize 30
 
 Show
-Quality > 1
+Quality > 5
 Rarity Normal
 SetBorderColor 200 200 200
 SetFontSize 35
@@ -286,7 +286,7 @@ Show
 Sockets > 0
 Rarity Magic
 SetBorderColor 0 0 200
-SetFontSize 35
+SetFontSize 30
 
 Show
 Quality > 1
@@ -302,7 +302,7 @@ SetFontSize 35
 Show
 Class "Rings" "Amulets" "Belts"
 Rarity Rare
-SetFontSize 40
+SetFontSize 35
 SetTextColor 233 206 75
 SetBorderColor 233 206 75
 PlayEffect Yellow
@@ -315,17 +315,17 @@ MinimapIcon 1 Yellow Diamond
 Show
 Class "Rings" "Amulets" "Belts"
 Rarity Rare
-SetFontSize 40
+SetFontSize 30
 
 Hide
 Rarity Magic
 Class "Rings" "Amulets" "Belts"
-SetFontSize 40
+SetFontSize 30
 
 Hide
 Rarity Normal
 Class "Rings" "Amulets" "Belts"
-SetFontSize 40
+SetFontSize 30
 
 
 #--------------------------
@@ -339,7 +339,7 @@ SetFontSize 40
 Hide
 Rarity <= Magic
 Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre"
-AreaLevel >= 65
+AreaLevel >= 66
 
 ### OPTIONAL RULE: REDUCES BACKGROUND ON LOW LEVEL BASES
 
